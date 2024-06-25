@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <!-- https://github.com/spring-projects/spring-boot/blob/v1.5.13.RELEASE/spring-boot/src/main/resources/org/springframework/boot/logging/logback/defaults.xml -->
     <include resource="org/springframework/boot/logging/logback/defaults.xml" />
 
     <property name="APP_NAME" value="unit-test-training-demo" />
-    <property name="LOG_PATH" value="${user.home}/${APP_NAME}/logs" />
+    <property name="LOG_PATH" value="/data/logs/${APP_NAME}" />
     <property name="LOG_FILE" value="${LOG_PATH}/application.log" />
 
     <appender name="APPLICATION"

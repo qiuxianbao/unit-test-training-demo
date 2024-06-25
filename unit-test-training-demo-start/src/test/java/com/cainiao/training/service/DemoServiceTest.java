@@ -12,6 +12,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.mockito.Mockito.*;
 
+// MockitoJUnitRunner
 @RunWith(MockitoJUnitRunner.class)
 public class DemoServiceTest {
     @Mock

@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: unit-test-training-demo
+
+management:
+  port: 9080
+  endpoints:
+    web:
+      exposure:
+        include: "*"

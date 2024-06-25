@@ -35,6 +35,7 @@ public class ADemoControllerTest {
         String result = demoController.execute("request");
         Assert.assertEquals("replaceMeWithExpectedResult", result);
 
+        // 判断结果
         assertThat(result).isEqualTo("replaceMeWithExpectedResult");
         assertThat(result).contains("replace");
     }
@@ -46,6 +47,7 @@ public class ADemoControllerTest {
         assertThatExceptionOfType(RuntimeException.class).isThrownBy(() -> demoController.execute("req"))
                 .withCauseExactlyInstanceOf(IOException.class)
                 .withMessageContaining("TEST");
+        // 验证过程
         verify(mockDemoService).getResult(anyString());
         verifyNoMoreInteractions(mockDemoService);
     }
